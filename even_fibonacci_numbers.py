@@ -5,16 +5,16 @@ previous two terms. By starting with 1 and 2, the first 10 terms will be:
 By considering the terms in the Fibonacci sequence whose values do not
 exceed four million, find the sum of the even-valued terms."""
 
-number = 1
-next_number = 2
+num = 1
+next_num = 2
 sequence = 0
-counter = 0
+count = 0
 while sequence < 4000000:
     if (sequence % 2 ==0):
-        counter = counter + sequence
-    sequence = number + next_number
-    number = next_number
-    next_number = sequence
-    
-counter = counter + 2
-print counter
+        count += sequence
+    sequence = num + next_num
+    num = next_num
+    next_num = sequence
+
+count += 2
+print count
